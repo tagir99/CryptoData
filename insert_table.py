@@ -1,4 +1,4 @@
-from main import Recomendation
+from data_input import Recomendation
 import psycopg2
 import datetime
 
@@ -8,10 +8,10 @@ def insert_table():
     try:
         # connect to exist database
         connection = psycopg2.connect(
-            host='127.0.0.1',
-            user='postgres',
-            password='*****',
-            dbname='bot_transaction',
+            host='0.0.0.0',
+            user='qwerty',
+            password='qwerty',
+            dbname='exampledb',
             port=5432
         )
 
